@@ -88,3 +88,112 @@ body {
     75% { clip: rect(98px, 9999px, 71px, 0); }
     100% { clip: rect(18px, 9999px, 13px, 0); }
 }
+
+/* Animation de fond de type code/matrice */
+.code-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.code-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));*/
+  z-index: -1;
+}
+
+/* Animation de particules binaires */
+.binary-particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.binary-particles span {
+  position: absolute;
+  color: rgba(77, 232, 77, 0.3);
+  font-family: monospace;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* Grille de fond de type circuit */
+.circuit-grid {
+  background-image: 
+    linear-gradient(rgba(77, 232, 77, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 232, 77, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circuit-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(77, 232, 77, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.circuit-line {
+  position: absolute;
+  background-color: rgba(77, 232, 77, 0.2);
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+/* Effet de scan */
+.scan-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(77, 232, 77, 0.1) 50%,
+    transparent 100%
+  );
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Assurez-vous que le contenu principal est scrollable */
+html, body {
+  overflow-x: hidden;
+  min-height: 100%;
+}

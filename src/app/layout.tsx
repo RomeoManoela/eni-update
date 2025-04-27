@@ -3,6 +3,7 @@
 import './globals.css'
 import React, { useEffect, useRef } from 'react'
 import Header from '@/ui/Header'
+import Footer from '@/ui/Footer'
 
 export default function RootLayout({
   children,
@@ -52,6 +53,7 @@ export default function RootLayout({
         <div className='relative min-h-screen'>
           <Header />
           <main className='relative z-10'>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

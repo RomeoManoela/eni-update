@@ -16,15 +16,13 @@ function Home() {
         </p>
       </div>
       <div className={'mt-16 grid grid-cols-5 gap-4'}>
-        <div className={'bg-opacity-30 col-span-2 rounded-2xl bg-gray-900 p-1.5'}>
-          <Img
-            src={'/eni-2.jpg'}
-            alt={'eni-2'}
-            width={600}
-            height={500}
-            className={'rounded-2xl'}
-          />
-        </div>
+        <Img
+          src={'/eni-2.jpg'}
+          alt={'eni-2'}
+          width={900}
+          height={700}
+          className={'col-span-2 rounded-2xl'}
+        />
         <div className={'col-span-3 ml-8'}>
           <h2 className={'mb-8 text-2xl tracking-widest text-lime-400 md:text-4xl'}>
             L&#39;<span className={'text-white'}>E</span>cole{' '}
@@ -32,7 +30,7 @@ function Home() {
             <span className={'text-white'}>I</span>nformatique, votre passerelle vers l&#39;avenir
             de la technologie
           </h2>
-          <p className={'text-2xl'}>
+          <p className={'text-xl'}>
             Située au cœur de Fianarantsoa, notre université est dédiée à l&#39;excellence dans
             l&#39;enseignement de l&#39;informatique et à la formation de professionnels compétents
             et innovants. L&#39;Ecole Nationale d&#39;Informatique, en abrégé ENI, est un
@@ -46,7 +44,7 @@ function Home() {
           <h1 className={'mb-8 text-2xl tracking-widest text-lime-400 uppercase md:text-4xl'}>
             Mission et vision
           </h1>
-          <p className={'text-2xl'}>
+          <p className={'text-xl'}>
             Notre mission est de former une génération de professionnels de l&#39;informatique
             créatifs et éthiques, prêts à exceller dans un monde numérique en constante évolution.
             Nous nous engageons à contribuer au développement durable de Madagascar en offrant une

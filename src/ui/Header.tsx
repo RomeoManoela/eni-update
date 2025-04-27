@@ -21,14 +21,14 @@ function Header() {
         <Link href={'/mentions-parcours'}>Mentions et parcours</Link>
       </nav>
       <Link
-        href={'/a-propos'}
+        href={'/galerie'}
         className={
           'rounded-3xl border border-lime-800' +
           ' px-4 transition-all hover:border-white hover:text-lime-800' +
           ' duration-300'
         }
       >
-        A propos de nous
+        Galerie
       </Link>
     </header>
   )

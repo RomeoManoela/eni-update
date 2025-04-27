@@ -1,3 +1,31 @@
+type GradeDefinition = {
+  nationalGrade: string
+  definition: string
+}
+
+const gradeDefinitions: GradeDefinition[] = [
+  {
+    nationalGrade: '18.00/20 or above',
+    definition: 'HONORABLE – Outstanding level, often reserved for the best results',
+  },
+  {
+    nationalGrade: '16.00 – 17.99/20',
+    definition: 'VERY GOOD – Excellent mastery with few mistakes',
+  },
+  {
+    nationalGrade: '14.00 – 15.99/20',
+    definition: 'GOOD – Solid performance with a satisfactory grasp of the subject',
+  },
+  {
+    nationalGrade: '12.00 – 13.99/20',
+    definition: 'FAIRLY GOOD – Acceptable knowledge and skills',
+  },
+  {
+    nationalGrade: '10.00 – 11.99/20',
+    definition: 'PASSABLE – Just enough to pass, but without deep mastery',
+  },
+]
+
 function MentionParcours() {
   return (
     <div className='container mx-auto px-4 py-8'>
@@ -126,10 +154,27 @@ function MentionParcours() {
                 ➣
               </span>
               <span className='transition-colors duration-300 group-hover:text-lime-300'>
-                Audit des systèmes d'Information (ASI) – (Master)
+                Audit des systèmes d&#39;Information (ASI) – (Master)
               </span>
             </p>
           </div>
+        </div>
+      </div>
+      <div className='mt-16 rounded-lg border border-lime-900/50 bg-black/30 p-6 backdrop-blur-sm'>
+        <h1 className='mb-6 text-2xl font-bold text-lime-400'>ENI Grading Scale</h1>
+        <div className='space-y-4'>
+          {gradeDefinitions.map((grade, index) => (
+            <div
+              key={index}
+              className='flex flex-col rounded border border-lime-400/30 bg-lime-900/10 p-4 backdrop-blur-sm transition-all duration-300 hover:border-lime-400'
+            >
+              <div className='flex items-center'>
+                <span className='mr-2 text-lime-400'>➣</span>
+                <span className='font-semibold'>{grade.nationalGrade}</span>
+              </div>
+              <p className='mt-2 pl-6 text-gray-300'>{grade.definition}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

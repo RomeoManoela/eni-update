@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <header className={'mb-8 flex items-center justify-between px-4'}>
+    <header className={'mb-8 flex items-center justify-between md:px-4'}>
       <Link href={'/'}>
         <Img
           src='/logo.png'
@@ -16,8 +16,8 @@ function Header() {
       <nav
         className={
           'absolute top-0 left-1/2 z-10 -translate-x-1/2 bg-black/80 backdrop-blur-sm' +
-          ' flex justify-center gap-2 px-5 py-2 text-sm font-semibold text-lime-400 md:gap-6 md:px-12' +
-          ' border-x border-b border-lime-900/50 md:text-base'
+          ' flex justify-between gap-4 px-8 py-2 text-sm font-semibold text-lime-400 md:gap-6 md:px-12' +
+          ' md:text-base'
         }
         style={{
           clipPath: 'polygon(0% 0%, 100% 0%, 90% 100%, 15% 100%)',

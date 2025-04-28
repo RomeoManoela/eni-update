@@ -15,7 +15,7 @@ function Home() {
           &gt; Bienvenue dans le futur de l&#39;informatique...
         </p>
       </div>
-      <div className={'mt-8 md:mt-16 md:grid md:grid-cols-5 md:gap-4'}>
+      <div className={'mt-8 items-center md:mt-16 md:grid md:grid-cols-5 md:gap-4'}>
         <Img
           src={'/eni-2.jpg'}
           alt={'eni-2'}
@@ -67,6 +67,45 @@ function Home() {
             width={900}
             height={700}
           />
+        </div>
+      </div>
+      <div className={'mt-8 items-center md:mt-16 md:grid md:grid-cols-5 md:gap-4'}>
+        <Img
+          src={'/Game.jpg'}
+          alt={'Game'}
+          width={900}
+          height={700}
+          className={'rounded-2xl md:col-span-2'}
+        />
+        <div className={'mt-4 w-full md:col-span-3 md:mt-0 md:ml-8'}>
+          <h2
+            className={'mb-4 text-xl tracking-widest text-lime-400 md:mb-8 md:text-2xl lg:text-4xl'}
+          >
+            Vie Étudiante Dynamique
+          </h2>
+          <p className={'text-base md:text-xl'}>
+            L&#39;expérience étudiante à l&#39;ENI va au-delà des salles de classe. Des clubs
+            d&#39;informatique aux compétitions technologiques, notre campus est un terrain fertile
+            pour cultiver des passions, établir des connexions significatives et créer des souvenirs
+            durables.
+          </p>
+        </div>
+      </div>
+      <div className='mt-16'>
+        <h2 className='mb-6 text-center text-2xl tracking-widest text-lime-400 uppercase md:text-3xl'>
+          Nous trouver
+        </h2>
+        <div className='w-full overflow-hidden rounded-lg border border-lime-900/50 shadow-lg shadow-lime-900/20'>
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5693839020694!2d47.09088797485732!3d-21.45522798575204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21e7bed737f377b5%3A0xb8558e55587dd811!2sEcole%20Nationale%20d&#39;Informatique!5e0!3m2!1sfr!2smg!4v1697553991549!5m2!1sfr!2smg'
+            width='100%'
+            height='450'
+            style={{ border: 0 }}
+            allowFullScreen
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+            className='w-full'
+          ></iframe>
         </div>
       </div>
     </div>

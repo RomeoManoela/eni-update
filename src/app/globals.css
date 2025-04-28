@@ -16,7 +16,6 @@ body {
     border-right: 3px solid #4ade80;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: 0.8rem;
     animation:
         typing 3.5s steps(40, end),
         blink-caret 0.75s step-end infinite;
